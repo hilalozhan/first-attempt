@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<conio.h>
+int fact(int);
+int main (){
+	printf("bir sayi giriniz:");
+	int n;
+	scanf("%d",&n);
+	printf("faktöriyeli:%d",fact(n));
+}
+int fact(int n){
+	int sonuc= 1;
+	int i;
+	for (i=1;i<=n;i++){
+		sonuc*=i;
+	}	
+	return sonuc;
+}
